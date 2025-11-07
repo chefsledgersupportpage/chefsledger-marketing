@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Ledger - Kitchen Inventory Management App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #007AFF;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #007AFF;
+        }
+        .feature h3 {
+            color: #007AFF;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .cta-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+            border-radius: 10px;
+            color: white;
+        }
+        .cta-section h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+        .app-store-badge:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .benefits {
+            margin: 40px 0;
+        }
+        .benefits h2 {
+            color: #007AFF;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+        .benefit-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007AFF;
+        }
+        .benefit-list li:before {
+            content: "✓ ";
+            color: #007AFF;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #666;
+        }
+        .footer a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👨‍🍳 Chef's Ledger</h1>
+            <p class="tagline">Transform your kitchen into an organized powerhouse</p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Take Control of Your Kitchen Today</h2>
+            <p>The ultimate kitchen inventory management app for iPhone</p>
+            <a href="#" class="app-store-badge">Available on the App Store</a>
+        </div>
+
+        <div class="benefits">
+            <h2>Why Choose Chef's Ledger?</h2>
+            <ul class="benefit-list">
+                <li>Never wonder what's in your pantry again - track every item with ease</li>
+                <li>Reduce food waste by monitoring expiration dates and getting alerts</li>
+                <li>Save money with smart expense tracking and budget insights</li>
+                <li>Stay organized with intelligent shopping lists that keep you on track</li>
+                <li>Scan receipts instantly and save them as PDF files</li>
+                <li>Sync seamlessly across all your iPhones with iCloud</li>
+                <li>Share inventory with family and friends using Import/Export</li>
+                <li>Get low stock alerts so you never run out of essentials</li>
+                <li>Find nearby grocery stores and track prices to save money</li>
+                <li>100% privacy - your data stays in your iCloud account</li>
+            </ul>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>📋 Smart Inventory</h3>
+                <p>Track food items with categories, quantities, prices, and expiration dates. Stay ahead of your inventory with intelligent organization.</p>
+            </div>
+            <div class="feature">
+                <h3>🛒 Shopping Lists</h3>
+                <p>Create smart shopping lists that keep you organized at the store. Mark items as you shop and never forget an ingredient again!</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Expense Tracking</h3>
+                <p>Take control of your food budget! Monitor spending, track expenses, and gain insights into your grocery habits.</p>
+            </div>
+            <div class="feature">
+                <h3>📷 Receipt Scanner</h3>
+                <p>Scan receipts in seconds and save them as PDF files. Never lose track of a purchase again with advanced receipt scanning.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Statistics</h3>
+                <p>Discover patterns in your food usage and spending. Get valuable insights that help you save money and reduce waste.</p>
+            </div>
+            <div class="feature">
+                <h3>🔔 Smart Alerts</h3>
+                <p>Get instant notifications when items are running low or expiring. Never run out of essentials again with intelligent alerting.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Revolutionize Your Kitchen?</h2>
+            <p>Download Chef's Ledger today and experience the difference that intelligent organization makes!</p>
+            <a href="#" class="app-store-badge">Get Started on the App Store</a>
+        </div>
+
+        <div class="footer">
+            <p><strong>Chef's Ledger</strong> - Kitchen Inventory Management</p>
+            <p>Version 1.0 | Developer: Mital Dave</p>
+            <p>For support, visit our <a href="https://adityadave2008.github.io/chefsledger-support/">Support Page</a></p>
+            <p>© 2025 Mital Dave. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+
